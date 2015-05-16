@@ -1,8 +1,9 @@
 class Bycycle(object):
-	def __init__(self, weight, cost):	
-		self.cost = bike_cost
+	def __init__(self, weight, cost):
 		pass
-	
+
+Bycycle(cost) = bike_cost
+
 Surly = Bycycle(45, 300)
 Giant = Bycycle(70, 120)
 Soma = Bycycle(34, 1000)
@@ -20,9 +21,9 @@ class Bikeshop(object):
 		
 		pass
 	
-Premier_Bikes = Bikeshop({Surly : Bycycle.cost, Giant: Bycycle.cost, Schwinn : Bycycle.cost})
-Specialty_Bikes = Bikeshop({Schwinn : Bycycle.cost, Cannondale : Bycycle.cost, Mongoose: Bycycle.cost})
-Cityside_Bikes = Bikeshop({Surly : Bycycle.cost, Giant : Bycycle.cost, Soma : Bycycle.cost, Mongoose : Bycycle.cost, Cannondale : Bycycle.cost, Schwinn : Bycycle.cost})
+Premier_Bikes = Bikeshop({Surly : Bycycle.bike_cost, Giant: Bycycle.bike_cost, Schwinn : Bycycle.bike_cost})
+Specialty_Bikes = Bikeshop({Schwinn : Bycycle.bike_cost, Cannondale : Bycycle.bike_cost, Mongoose: Bycycle.bike_cost})
+Cityside_Bikes = Bikeshop({Surly : Bycycle.bike_cost, Giant : Bycycle.bike_cost, Soma : Bycycle.bike_cost, Mongoose : Bycycle.bike_cost, Cannondale : Bycycle.bike_cost, Schwinn : Bycycle.bike_cost})
 	
 	
 	
