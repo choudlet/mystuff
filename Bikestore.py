@@ -1,54 +1,54 @@
-class Bycycle(object):
-	def __init__(self, weight, cost):
-		pass
-
-Bycycle(cost) = bike_cost
-
-Surly = Bycycle(45, 300)
-Giant = Bycycle(70, 120)
-Soma = Bycycle(34, 1000)
-Mongoose = Bycycle(65, 250)
-Cannondale = Bycycle(40, 600)
-Schwinn = Bycycle(55, 450)
-
-
-class Bikeshop(object):
-	def __init__(self, inventory):
-	
-		def pricing(inventory):
-			for Bycycle.bike_cost in Bikeshop[Bycycle.self]:
-				Selling_Price = Bycycle.bike_cost * 1.20
+class Bicycle(object):
+	def __init__(self, brand, weight, cost):
+		self.weight = weight
+		self.cost = cost
+		self.brand = brand
 		
-		pass
-	
-Premier_Bikes = Bikeshop({Surly : Bycycle.bike_cost, Giant: Bycycle.bike_cost, Schwinn : Bycycle.bike_cost})
-Specialty_Bikes = Bikeshop({Schwinn : Bycycle.bike_cost, Cannondale : Bycycle.bike_cost, Mongoose: Bycycle.bike_cost})
-Cityside_Bikes = Bikeshop({Surly : Bycycle.bike_cost, Giant : Bycycle.bike_cost, Soma : Bycycle.bike_cost, Mongoose : Bycycle.bike_cost, Cannondale : Bycycle.bike_cost, Schwinn : Bycycle.bike_cost})
-	
-	
+
+B1 = Bicycle("Cannondale", 45, 300),
+B2 = Bicycle("Schwinn", 70, 120),
+B3 = Bicycle("Mongoose", 34, 1000),
+B4 = Bicycle("Cheapo", 65, 250),
+B5 = Bicycle("Premier", 40, 600),
+B6 = Bicycle("Speciality", 55, 450),
+
+bikes = [B1, B2, B3, B4, B5, B6]
 	
 class Customer(object):
-	def __init__(self, funds, own):
-		self.funds = funds
-		self.own = own
-		self = person
-		pass
-
-Daniel = Customer(500, False)
-George = Customer(1000, False)
-Sarah = Customer(275, False)
-Tracy = Customer(750, False)
-
-Customerlist = [Daniel, George, Sarah, Tracy]
-
-def Shopping():
-	for customer in Customerlist:
-		return Customer
-		
-		
-if __name__ == "__main__":
-	for Customer in Customerlist:
-		if Customer.own == False:
-			print "The following customers need new bikes: %r" % (name)
-			
 	
+	def __init__(self, name, funds, bikes_owned):
+		self.funds = funds
+		self.bikes_owned = bikes_owned
+		self.name = name
+		pass
+	
+def wantbike():
+	for Customer in Customers:
+		if Customer.bikes_owned == 0:
+			print (" {} needs a bike today.".format(Customer.name))
+	pass
+C1 = Customer("David", 1000, 0)
+C2 = Customer("Tracy", 600, 0)
+C3 = Customer("Michelle", 400, 0)
+C4 = Customer("Rick", 2000, 2)
+
+Customers = [C1, C2, C3, C4]
+
+class Bikeshop(object):
+	def __init__(self, name):
+		self.name = name
+		self.inventory = []
+		self.money = 0
+	def add_bikes(self, bikes):
+    		if instance(bikes, Bycicle):
+        		self.inventory.append(bikes)
+BS1 = Bikeshop("Pat's Bikes")
+BS2 = Bikeshop("City Bikes")
+BS3 = Bikeshop("Slick Bikes")
+
+Bikeshops = [BS1, BS2, BS3]
+
+
+if __name__ == "__main__":
+	wantbike()
+	add_bikes()
