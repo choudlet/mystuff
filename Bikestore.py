@@ -1,8 +1,13 @@
+from pprint import pprint
+
 class Bicycle(object):
 	def __init__(self, brand, weight, cost):
 		self.weight = weight
 		self.cost = cost
 		self.brand = brand
+	def __repr__(self):
+		return self.brand
+		pass
 		
 
 B1 = Bicycle("Cannondale", 45, 300),
@@ -35,20 +40,33 @@ C4 = Customer("Rick", 2000, 2)
 Customers = [C1, C2, C3, C4]
 
 class Bikeshop(object):
-	def __init__(self, name):
+	def __init__(self, name, margin):
 		self.name = name
 		self.inventory = []
 		self.money = 0
+		self.margin = margin
 	def add_bikes(self, bikes):
-    		if instance(bikes, Bycicle):
-        		self.inventory.append(bikes)
-BS1 = Bikeshop("Pat's Bikes")
-BS2 = Bikeshop("City Bikes")
-BS3 = Bikeshop("Slick Bikes")
+		for bike in bikes:
+			self.inventory.append(bike)
+		print "%s has all these great bikes in stock today: %s" % (self.name, self.inventory)
+	
+	def show_prices(self):
+		for bike in self.inventory:
+			bike.cost * self.margin
+			
+		
+BS1 = Bikeshop("Pat's Bikes", 1.2)
+BS2 = Bikeshop("City Bikes", 1.6)
+BS3 = Bikeshop("Slick Bikes", 2.4)
+BS1.show_prices()
+
 
 Bikeshops = [BS1, BS2, BS3]
 
 
 if __name__ == "__main__":
-	wantbike()
-	add_bikes()
+	wantbike() #Represents who wants to buy (David, Tracy, Michelle)
+	BS1.add_bikes(bikes) 
+	BS2.add_bikes(bikes)
+	BS3.add_bikes(bikes)
+	print BS1.inventory
